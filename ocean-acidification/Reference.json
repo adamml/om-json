@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Reference.json",
+	"title": "Reference"
+	"description": "Describes the recommended citation text for a reference, and provides a link to the journal paper or methodology description",
+	"type": "object",
+	"properties": {
+		"id": {
+			"title": "id",
+			"description": "A unique identifier for this reference",
+			"type": "string"
+		},
+		"doiOrWebAddress": {
+			"title": "doiOrWebAddress",
+			"description": "Either a formal Digital Object Identifier, or a link to any other web resource, describing the protocol",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/doi" }
+			]
+		},
+		"citation": {
+			"title": "citation",
+			"description": "A plain text representation of the recommended citation text to be used in referencing the protocol description",
+			"type": "string"
+		}
+	},
+	"required": [ "id", "doiOrWebAddress", "citation"],
+	"additionalProperties": false
+}

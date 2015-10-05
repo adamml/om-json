@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json",
+  "id": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json",
   "title": "Common",
   "description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
   "definitions": {
@@ -48,6 +48,15 @@
       },
       "required": [ "href" ],
       "additionalProperties":false
-    }
+    },
+	"doi": {
+		"title": "link",
+		"type": "object",
+		"properties": {
+			"doi": { "type": "string", "format": "uri" }
+		},
+		"required": [ "href" ],
+		"additionalProperties":false
+	}
   }
 }

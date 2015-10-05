@@ -2,20 +2,25 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json",
 	"title": "Protocol"
-	"description": "Specialised version of the Observations and Measurements procedure, for particular use in Ocean Acidification projects",
+	"description": "A specialisation of O&M's process, initially defined for the analytical chemistry domain of the UNESCO-IOC Ocean Acidificiation project",
 	"type": "object",
 	"properties": {
 		"id": {
 			"title": "id",
-			"description": "A unique identifier for the protocol",
+			"description": "A unique identifier for this protocol",
 			"type": "string"
 		},
 		"instrument": {
 			"title": "instrument",
-			"description": "Instrument used within the analysis - URL links to a common vocabulary of make and model",
-			"$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
+			"description": "A URL linking to a controlled vocabulary term defining the instrument make and model used in this instance of the protocol",
+			"$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
+		},
+		"laboratory": {
+			"title": "laboratory",
+			"description": "A URL to a controlled vocabulary term defining the laboratory responsible for the observation made using this instance of the protocol",
+			"$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
 		}
 	},
-	"required": [ "id"],
+	"required": [ "id", "laboratory"],
 	"additionalProperties": false
 }
