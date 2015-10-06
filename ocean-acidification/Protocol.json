@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json",
-	"title": "Protocol"
+	"title": "Protocol",
 	"description": "A specialisation of O&M's process, initially defined for the analytical chemistry domain of the UNESCO-IOC Ocean Acidificiation project",
 	"type": "object",
 	"properties": {
@@ -19,6 +19,22 @@
 			"title": "laboratory",
 			"description": "A URL to a controlled vocabulary term defining the laboratory responsible for the observation made using this instance of the protocol",
 			"$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
+		},
+		"methodology": {
+			"title": "methodology",
+			"description": "Either an object or a URL giving a description of a reference to, for example, a journal article and some descriptive parameters for an analytical methodology",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Methodology.json" }
+			]
+		},
+		"quality": {
+			"title": "quality",
+			"description": "Either an object or a URL giving a description of the quality (limits of detection, accuracy, precision, uncertainty) of an analytical protocol",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Quality.json" }
+			]
 		}
 	},
 	"required": [ "id", "laboratory"],

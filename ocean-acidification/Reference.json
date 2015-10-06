@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Reference.json",
-	"title": "Reference"
+	"title": "Reference",
 	"description": "Describes the recommended citation text for a reference, and provides a link to the journal paper or methodology description",
 	"type": "object",
 	"properties": {

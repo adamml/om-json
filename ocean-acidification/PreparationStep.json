@@ -1,0 +1,56 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/PreparationStep.json",
+	"title": "PreparationStep",
+	"description": "Describes the sample preparation",
+	"type": "object",
+	"properties": {
+		"id": {
+			"title": "id",
+			"description": "A unique identifier for this sample preparation",
+			"type": "string"
+		},
+		"fixation": {
+			"title": "fixation",
+			"description": "Either a plain text description of the fixation method, or a URL to a description of the fixation method in a controlled vocabulary entry",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "type" : "string" }
+			]
+		},
+		"storage": {
+			"title": "storage",
+			"description": "Either a plain text description of the storage method, or a URL to a description of the storage method in a controlled vocabulary entry",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "type" : "string" }
+			]
+		},
+		"extraction": {
+			"title": "extraction",
+			"description": "Either a plain text description of the extraction method, or a URL to a description of the extraction method in a controlled vocabulary entry",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "type" : "string" }
+			]
+		},
+		"pretreatment": {
+			"title": "pretreatment",
+			"description": "Either a plain text description of the pretreatment method, or a URL to a description of the pretreatment method in a controlled vocabulary entry",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "type" : "string" }
+			]
+		},
+		"analysis": {
+			"title": "analysis",
+			"description": "Either a plain text description of the analysis method, or a URL to a description of the analysis method in a controlled vocabulary entry",
+			"oneOf": [
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "type" : "string" }
+			]
+		}
+	},
+	"required": [ "id"],
+	"additionalProperties": false
+}
