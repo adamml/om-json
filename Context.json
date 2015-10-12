@@ -1,0 +1,8 @@
+"@context": {
+    "observedProperty": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#observedProperty",
+    "href": "@id",
+    "foi": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#featureOfInterest",
+    "id": "@id",
+    "phenomenonTime": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#phenomenonTime",
+    "instant": "@value"
+  }
