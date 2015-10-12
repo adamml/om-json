@@ -4,5 +4,10 @@
     "foi": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#featureOfInterest",
     "id": "@id",
     "phenomenonTime": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#phenomenonTime",
-    "instant": "@value"
+    "instant": "@value",
+    "member": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#relatedObservation",
+    "procedure": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#Process",
+    "resultTime": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#resultTime",
+    "result": "http://def.seegrid.csiro.au/isotc211/iso19156/2011/observation#result",
+    "value": "@value"
   }
