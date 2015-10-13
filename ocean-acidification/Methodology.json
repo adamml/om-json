@@ -27,6 +27,6 @@
 			]
 		}
 	},
-	"required": [ "id", "reference", "preparationStep"],
+	"required": [ "id"],
 	"additionalProperties": false
 }
