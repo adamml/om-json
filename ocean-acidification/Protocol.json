@@ -37,6 +37,6 @@
 			]
 		}
 	},
-	"required": [ "id", "laboratory"],
+	"required": [ "id", "methodology"],
 	"additionalProperties": false
 }
