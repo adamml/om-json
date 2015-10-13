@@ -22,8 +22,13 @@
 			"title": "citation",
 			"description": "A plain text representation of the recommended citation text to be used in referencing the protocol description",
 			"type": "string"
+		},
+		"informalReference": {
+			"title": "informalReference",
+			"description": "For use only if a non-citable and non-machine referenceable document exists, a written description may be provided",
+			"type": "string"
 		}
 	},
-	"required": [ "id", "citation"],
+	"required": [ "id"],
 	"additionalProperties": false
 }
