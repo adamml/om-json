@@ -24,6 +24,6 @@
 			"type": "string"
 		}
 	},
-	"required": [ "id", "doiOrWebAddress", "citation"],
+	"required": [ "id", "citation"],
 	"additionalProperties": false
 }
