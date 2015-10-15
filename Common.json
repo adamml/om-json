@@ -50,7 +50,7 @@
       "additionalProperties":false
     },
 	"doi": {
-		"title": "link",
+		"title": "doi",
 		"type": "object",
 		"properties": {
 			"doi": { "type": "string", "format": "uri" }
