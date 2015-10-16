@@ -3,5 +3,11 @@
 	"featureOfInterest": {"href": "http://vocab.nerc.ac.uk/collection/C19/current/1_6/"},
 	"phenomenonTime": {"instant": "2015-09-23T12:51:11.421Z"},
 	"type": "measure",
-	"result": {"value": 12, "uom":"http://example.com/foo"}
+	"result": {"value": 12, "uom":"http://example.com/foo"},
+	"procedure": {
+		"id": "exampleTotalAlkalinity",
+		"methodology": {"id": "foo"},
+        	"instrument": {"href": "http://bar"},
+        	"laboratory": {"href": "http://baz"}
+	}
 }
