@@ -11,6 +11,9 @@
 			"type": "string"
 		},
 		"anyOf":[
+			{"$ref","http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Common.json#/definitions/doiOrWebAddress"},
+			{"$ref","http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Common.json#/definitions/citation"},
+			{"$ref","http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Common.json#/definitions/informalReference"}
 		]
 	},
 	"required": [ "id"],
