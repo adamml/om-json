@@ -55,7 +55,7 @@
 		"properties": {
 			"doi": { "type": "string", "format": "uri" }
 		},
-		"required": [ "href" ],
+		"required": [ "doi" ],
 		"additionalProperties":false
 	}
   }
