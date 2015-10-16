@@ -2,7 +2,7 @@
   "id": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Common.json",
   "title": "Common",
   "description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
-  "definitions": "doiOrWebAddress": {
+  "definitions": {"doiOrWebAddress": {
 			"title": "doiOrWebAddress",
 			"description": "Either a formal Digital Object Identifier, or a link to any other web resource, describing the protocol",
 			"oneOf": [
@@ -20,4 +20,5 @@
 			"description": "For use only if a non-citable and non-machine referenceable document exists, a written description may be provided",
 			"type": "string"
 		}
+	}
 }
