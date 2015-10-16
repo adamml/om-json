@@ -25,7 +25,7 @@
 			"description": "Either an object or a URL giving a description of a reference to, for example, a journal article and some descriptive parameters for an analytical methodology",
 			"oneOf": [
 				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Methodology.json" }
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Methodology.json" }
 			]
 		},
 		"quality": {
@@ -33,7 +33,7 @@
 			"description": "Either an object or a URL giving a description of the quality (limits of detection, accuracy, precision, uncertainty) of an analytical protocol",
 			"oneOf": [
 				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Quality.json" }
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Quality.json" }
 			]
 		}
 	},
