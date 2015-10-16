@@ -37,7 +37,7 @@
       "description": "procedure used in making observation. Typically a sensor or sensor-system, algorithm, computational procedure.",
 	  "oneOf": [
 		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
-		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json" },
+		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json" } 
 	  ]
     },
     "featureOfInterest": {
