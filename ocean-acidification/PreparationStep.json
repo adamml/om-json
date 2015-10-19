@@ -14,7 +14,7 @@
 			"title": "fixation",
 			"description": "Either a plain text description of the fixation method, or a URL to a description of the fixation method in a controlled vocabulary entry",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 				{ "type" : "string" }
 			]
 		},
@@ -22,7 +22,7 @@
 			"title": "storage",
 			"description": "Either a plain text description of the storage method, or a URL to a description of the storage method in a controlled vocabulary entry",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 				{ "type" : "string" }
 			]
 		},
@@ -30,7 +30,7 @@
 			"title": "extraction",
 			"description": "Either a plain text description of the extraction method, or a URL to a description of the extraction method in a controlled vocabulary entry",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 				{ "type" : "string" }
 			]
 		},
@@ -38,7 +38,7 @@
 			"title": "pretreatment",
 			"description": "Either a plain text description of the pretreatment method, or a URL to a description of the pretreatment method in a controlled vocabulary entry",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 				{ "type" : "string" }
 			]
 		},
@@ -46,7 +46,7 @@
 			"title": "analysis",
 			"description": "Either a plain text description of the analysis method, or a URL to a description of the analysis method in a controlled vocabulary entry",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 				{ "type" : "string" }
 			]
 		}
