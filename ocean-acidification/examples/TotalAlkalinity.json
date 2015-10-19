@@ -6,8 +6,13 @@
 	"result": {"value": 12, "uom":"http://example.com/foo"},
 	"procedure": {
 		"id": "exampleTotalAlkalinity",
-		"methodology": {"id": "foo"},
+		"methodology": {
+			"id": "someChemicalAnalysisMethod",
+			"reference": {"href": "https://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/examples/Reference_Examle.json"},
+			"preparationStep": {"id": "The Prepartory work for method above"}
+		},
         	"instrument": {"href": "http://bar"},
-        	"laboratory": {"href": "http://baz"}
+        	"laboratory": {"href": "http://baz"},
+		"quality": {"href": "http://blahblah"}
 	}
 }
