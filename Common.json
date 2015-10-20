@@ -1,62 +1,91 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json",
-  "title": "Common",
-  "description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
-  "definitions": {
-    "count": {
-      "title": "count",
-      "type": "integer"
-    },
-    "measure": {
-      "title": "measure",
-      "description": "scaled number - uom is optional, to support the case where a common uom is used in a collection",
-      "type": "object",
-      "properties": {
-        "value": { "type": "number" },
-        "uom": { "type": "string" }
-      },
-      "required": [ "value" ],
-      "additionalProperties": false
-    },
-    "text": {
-      "title": "text",
-      "type": "string"
-    },
-    "truth": {
-      "title": "truth",
-      "type": "boolean"
-    },
-    "vocabTerm": {
-      "title": "vocabTerm",
-      "description": "term with optional vocabulary source",
-      "type": "object",
-      "properties": {
-        "term": { "type": "string" },
-        "vocabulary": { "type": "string", "format": "uri" }
-      },
-      "required": [ "term" ],
-      "additionalProperties": false
-    },
-    "link": {
-      "title": "link",
-      "type": "object",
-      "properties": {
-        "href": { "type": "string", "format": "uri" },
-        "rel": { "type": "string", "format": "uri" },
-        "title": { "type": "string" }
-      },
-      "required": [ "href" ],
-      "additionalProperties":false
-    },
-	"doi": {
-		"title": "doi",
-		"type": "object",
-		"properties": {
-			"doi": { "type": "string", "format": "uri" }
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json",
+	"title": "Common",
+	"description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
+	"definitions": {
+		"count": {
+			"title": "count",
+			"type": "integer"
 		},
-		"required": [ "doi" ],
-		"additionalProperties":false
+		"measure": {
+			"title": "measure",
+			"description": "scaled number - uom is optional, to support the case where a common uom is used in a collection",
+			"type": "object",
+			"properties": {
+				"value": {
+					"type": "number"
+				},
+				"uom": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"value"
+			],
+			"additionalProperties": false
+		},
+		"text": {
+			"title": "text",
+			"type": "string"
+		},
+		"truth": {
+			"title": "truth",
+			"type": "boolean"
+		},
+		"vocabTerm": {
+			"title": "vocabTerm",
+			"description": "term with optional vocabulary source",
+			"type": "object",
+			"properties": {
+				"term": {
+					"type": "string"
+				},
+				"vocabulary": {
+					"type": "string",
+					"format": "uri"
+				}
+			},
+			"required": [
+				"term"
+			],
+			"additionalProperties": false
+		},
+		"link": {
+			"title": "link",
+			"type": "object",
+			"properties": {
+				"href": {
+					"type": "string",
+					"format": "uri"
+				},
+				"rel": {
+					"type": "string",
+					"format": "uri"
+				},
+				"title": {
+					"type": "string"
+				}
+			},
+			"required": [
+				"href"
+			],
+			"additionalProperties": false
+		},
+		"doi": {
+			"title": "doi",
+			"description": "A Digital Object Identifer to define a resource",
+			"type": "object",
+			"properties": {
+				"doi": {
+					"type": "string",
+					"format": "uri"
+				}
+			},
+			"required": [
+				"doi"
+			],
+			"additionalProperties": false
+		}
 	}
-  }
 }

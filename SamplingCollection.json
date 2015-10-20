@@ -13,7 +13,8 @@
     "type": {
       "title": "type",
       "description": "Identifies the type of object",
-      "type": "enum"
+      "type": "string",
+      "enum": ["Specimen","Sampling","SpatialSampling"]
     },
     "sampledFeature": {
       "title": "sampledFeature",
