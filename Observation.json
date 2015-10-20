@@ -70,7 +70,8 @@
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/text"            },
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Temporal.json#/definitions/temporalObject" },
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Geometry.json#/definitions/geometryObject" },
-        { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesTVP.json#/definitions/TimeseriesTVP" }
+        { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesTVP.json#/definitions/TVPairMeasure" },
+        { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesTVP.json#/definitions/TVPairCategory" }
       ]
     }
   },
