@@ -3,16 +3,24 @@
 	"featureOfInterest": {"href": "http://vocab.nerc.ac.uk/collection/C19/current/1_6/"},
 	"phenomenonTime": {"instant": "2015-09-23T12:51:11.421Z"},
 	"type": "measure",
-	"result": {"value": 12, "uom":"http://example.com/foo"},
+	"result": {"value": 12, "uom":"http://vocab.nerc.ac.uk/collection/P06/current/UEQL/"},
+	"resultTime": "2015-10-23T11:10:10Z",
+	"observedProperty": {"href": "http://vocab.nerc.ac.uk/collection/P01/current/ALKYZZXX/"},
 	"procedure": {
 		"id": "exampleTotalAlkalinity",
 		"methodology": {
 			"id": "someChemicalAnalysisMethod",
 			"reference": {"href": "https://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/examples/Reference_Examle.json"},
-			"preparationStep": {"id": "The Prepartory work for method above"}
+			"preparationStep": {
+				"id": "The Prepartory work for method above",
+				"analysis": {"href": "http://vocab.nerc.ac.uk/collection/S04/current/S0475/"}
+			}
 		},
-        	"instrument": {"href": "http://bar"},
-        	"laboratory": {"href": "http://baz"},
-		"quality": {"href": "http://blahblah"}
+        	"instrument": {"href": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0481/"},
+        	"laboratory": {"href": "SDN:EDMO:396"},
+		"quality": {
+			"id": "A general example of how quality could work",
+			"limitOfDetection": "0 - 15"
+		}
 	}
 }

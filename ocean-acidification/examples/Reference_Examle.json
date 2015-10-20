@@ -1,7 +1,6 @@
 {
 	"id": "Leadbetter&Vodden2015",
-	"doi": {"doi": "10.1080/17538947.2015.1033483"},
-	"url": {"href": "http://www.tandfonline.com/doi/abs/10.1080/17538947.2015.1033483"},
+	"doiOrWebAddress": {"doi": "10.1080/17538947.2015.1033483"},
 	"citation": "Leadbetter, A.M. & Vodden, P.N. (2015). Semantic linking of complex properties, monitoring processes and facilities in web-based representations of the environment. International Journal of Digital Earth.",
 	"informalReference": "Leadbetter & Vodden, 2015."
 }

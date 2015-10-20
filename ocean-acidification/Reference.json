@@ -10,17 +10,11 @@
 			"description": "A unique identifier for this reference",
 			"type": "string"
 		},
-		"doi": {
+		"doiOrWebAddress": {
 			"title": "doi",
-			"description": "A formal Digital Object Identifier to a resource describing the protocol",
+			"description": "A formal Digital Object Identifier, or a plain web link, to a resource describing the protocol",
 
-				"items": { "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/doi" }
-		},
-		"url": {
-			"title": "url",
-			"description": "A web address of a resource describing the protocol",
-
-				"items": { "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" }
+				"oneOf": [{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/doi" },{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" }]
 		},
 		"citation": {
 			"title": "citation",

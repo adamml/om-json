@@ -35,7 +35,7 @@
     "procedure": {
       "title": "procedure",
       "description": "procedure used in making observation. Typically a sensor or sensor-system, algorithm, computational procedure.",
-	  "anyOf": [
+	  "oneOf": [
 		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
 		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json" } 
 	  ]
@@ -61,7 +61,7 @@
     "result": {
       "title": "result",
       "description": "result of the observation",
-      "anyOf": [
+      "oneOf": [
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link"             },
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/measure"          },
         { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/vocabTerm"        },
