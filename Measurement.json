@@ -8,6 +8,7 @@
     { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Observation.json" }
   ],
   "properties": {
+    "@context" : { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/@context" },
     "id": { },
     "type": { "enum": [ "Measurement" ] } ,
     "phenomenonTime": { },

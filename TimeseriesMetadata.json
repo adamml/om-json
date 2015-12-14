@@ -9,6 +9,7 @@
       "description":"Metadata for the whole timeseries",
       "type":"object",
       "properties" : {
+	  	"@context" : { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/@context" },
         "temporalExtent": {
           "title":"temporalExtent",
           "type":"object",

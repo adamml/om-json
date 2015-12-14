@@ -4,6 +4,16 @@
 	"title": "Common",
 	"description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
 	"definitions": {
+		"@context": {
+			oneOf: [{
+				"title": "@context",
+				"description": "A context header for JSON-LD applications - using string here to allow for a remote context",
+				"type": "string"},
+				{"title": "@context",
+				"description": "A context header for JSON-LD applications - using array here to allow for a local context",
+				"type": "array"}
+			]
+		},
 		"count": {
 			"title": "count",
 			"type": "integer"

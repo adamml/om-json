@@ -5,6 +5,7 @@
 	"description": "A specialisation of O&M's process, initially defined for the analytical chemistry domain of the UNESCO-IOC Ocean Acidificiation project",
 	"type": "object",
 	"properties": {
+		"@context" : { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/@context" },
 		"id": {
 			"title": "id",
 			"description": "A unique identifier for this protocol",

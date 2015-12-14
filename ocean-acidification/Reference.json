@@ -5,6 +5,7 @@
 	"description": "Describes the recommended citation text for a reference, and provides a link to the journal paper or methodology description",
 	"type": "object",
 	"properties": {
+		"@context" : { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/@context" },
 		"id": {
 			"title": "id",
 			"description": "A unique identifier for this reference",
