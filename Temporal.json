@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://raw.githubusercontent.com/adamml/om-json/master/Temporal.json",
+  "id": "http://raw.githubusercontent.com/peterataylor/om-json/master/Temporal.json",
   "title": "Temporal",
   "description": "Temporal objects",
   "definitions": {

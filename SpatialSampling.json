@@ -5,19 +5,19 @@
   "description": "  ## EXTENDS SAMPLING FEATURE ##  Sampling feature whose defining characteristic is that it samples the intended feature by geometric subsetting. ",
   "type": "object",
   "allOf": [
-    { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Sampling.json" },
+    { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Sampling.json" },
     {
       "properties": {
         "shape": {
           "title": "shape",
           "description": "Spatial location and extent of the sampling feature",
-          "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Geometry.json#/definitions/geometryObject"
+          "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Geometry.json#/definitions/geometryObject"
         },
         "hostedProcedure": {
           "title": "hostedProcedure",
           "description": "Observation procedure (instrument, sensor, observer) associated with or hosted by this spatial sampling feature.",
           "type": "array",
-          "items": { "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
+          "items": { "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
           "minItems": 1
         }
       }

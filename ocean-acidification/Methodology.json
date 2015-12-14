@@ -14,7 +14,7 @@
 			"title": "reference",
 			"description": "Either an object defining the academic literature reference or a URL linking to such an object",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
 				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Reference.json" }
 			]
 		},
@@ -22,7 +22,7 @@
 			"title": "preparation step",
 			"description": "Either an object defining the sample preparation steps taken reference or a URL linking to such an object",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
 				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/PreparationStep.json" }
 			]
 		}

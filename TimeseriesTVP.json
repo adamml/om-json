@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesTVP.json",
+  "id": "http://raw.githubusercontent.com/peterataylor/om-json/master/TimeseriesTVP.json",
   "title": "TimeseriesTVP",
   "description": "A TimeseriesML time-value pair encoded timeseries",
   "type": "object",
@@ -11,14 +11,14 @@
       "properties" : {
         "time": {
           "type":"object",
-          "$ref":"http://raw.githubusercontent.com/adamml/om-json/master/Temporal.json#/definitions/temporalPrimitive"
+          "$ref":"http://raw.githubusercontent.com/peterataylor/om-json/master/Temporal.json#/definitions/temporalPrimitive"
         },
         "value": {
           "type":"number"
         },
         "metadata": {
           "type":"object",
-          "$ref":"http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesMetadata.json#/definitions/PointMetadata"
+          "$ref":"http://raw.githubusercontent.com/peterataylor/om-json/master/TimeseriesMetadata.json#/definitions/PointMetadata"
         }
       },
       "additionalProperties":false
@@ -29,11 +29,11 @@
       "properties" : {
         "time": {
           "type":"object",
-          "$ref":"http://raw.githubusercontent.com/adamml/om-json/master/Temporal.json#/definitions/temporalPrimitive"
+          "$ref":"http://raw.githubusercontent.com/peterataylor/om-json/master/Temporal.json#/definitions/temporalPrimitive"
         },
         "value": {
           "type":"object",
-          "$ref":"http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/vocabTerm"
+          "$ref":"http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm"
         }
       },
       "additionalProperties":false
@@ -53,12 +53,12 @@
     "metadata": {
       "title": "metadata",
       "description": "Metadata about the timeseries.",
-      "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesMetadata.json#/definitions/TimeseriesMetadata"
+      "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/TimeseriesMetadata.json#/definitions/TimeseriesMetadata"
     },
     "defaultPointMetadata": {
       "title": "defaultPointMetadata",
       "description": "Default metadata for each point in the timeseries (can be overridden on a per-point basis).",
-      "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/TimeseriesMetadata.json#/definitions/PointMetadata"
+      "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/TimeseriesMetadata.json#/definitions/PointMetadata"
     },
     "points": {
       "title": "points",

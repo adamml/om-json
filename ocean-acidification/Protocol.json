@@ -13,18 +13,18 @@
 		"instrument": {
 			"title": "instrument",
 			"description": "A URL linking to a controlled vocabulary term defining the instrument make and model used in this instance of the protocol",
-			"$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link"
+			"$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
 		},
 		"laboratory": {
 			"title": "laboratory",
 			"description": "A URL to a controlled vocabulary term defining the laboratory responsible for the observation made using this instance of the protocol",
-			"$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link"
+			"$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
 		},
 		"methodology": {
 			"title": "methodology",
 			"description": "Either an object or a URL giving a description of a reference to, for example, a journal article and some descriptive parameters for an analytical methodology",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
 				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Methodology.json" }
 			]
 		},
@@ -32,7 +32,7 @@
 			"title": "quality",
 			"description": "Either an object or a URL giving a description of the quality (limits of detection, accuracy, precision, uncertainty) of an analytical protocol",
 			"oneOf": [
-				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/Common.json#/definitions/link" },
+				{ "$ref" : "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
 				{ "$ref" : "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Quality.json" }
 			]
 		}
