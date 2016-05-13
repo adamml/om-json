@@ -31,20 +31,27 @@
     "observedProperty": {
       "title": "observedProperty",
       "description": "property whose value is the result of the observation",
-      "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
+	  "oneOf": [
+		{"$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"},
+		{"$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm"}
+	  ]
     },
     "procedure": {
       "title": "procedure",
       "description": "procedure used in making observation. Typically a sensor or sensor-system, algorithm, computational procedure.",
 	  "oneOf": [
 		{ "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link" },
+		{ "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm" },
 		{ "$ref": "http://raw.githubusercontent.com/adamml/om-json/master/ocean-acidification/Protocol.json" } 
 	  ]
     },
     "featureOfInterest": {
       "title": "featureOfInterest",
       "description": "subject of the observation, whose type may carry the observed property",
-      "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"
+	  "oneOf": [
+		{"$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/link"},
+		{ "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm" }
+	  ]
     },
     "samplingStrategy": {
       "title": "samplingStrategy",

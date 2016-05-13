@@ -27,7 +27,10 @@
 					"type": "number"
 				},
 				"uom": {
-					"type": "string"
+					oneOf: [
+					{"type": "string"},
+					{ "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm" }
+					}
 				}
 			},
 			"required": [
