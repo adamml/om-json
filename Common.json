@@ -5,7 +5,7 @@
 	"description": "A collection of commonly used types. Should maybe come from somehwere else, one day.",
 	"definitions": {
 		"@context": {
-			oneOf: [{
+			"oneOf": [{
 				"title": "@context",
 				"description": "A context header for JSON-LD applications - using string here to allow for a remote context",
 				"type": "string"},
@@ -27,7 +27,7 @@
 					"type": "number"
 				},
 				"uom": {
-					oneOf: [
+					"oneOf": [
 					{"type": "string"},
 					{ "$ref": "http://raw.githubusercontent.com/peterataylor/om-json/master/Common.json#/definitions/vocabTerm" }]
 					}
